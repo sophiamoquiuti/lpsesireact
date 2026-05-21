@@ -1,0 +1,121 @@
+:root {
+    --dark: #0B090A;
+    --text: #ffffff;
+    --bg: #161A1D;
+    --red1: #660709b4;
+    --red2: #A4161A;
+    --red3: #BA181B;
+    --red4: #E5383B;
+    --font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--red2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 100px;
+    z-index: 999;
+    transition: all 1s ease-in-out;
+    animation: decima 1s ease-in-out;
+}
+
+/* nav.sc {
+    background-color: var(--red1);
+    box-shadow: 10px 3px 10px var(--red1);
+} */
+
+@keyframes decima {
+    0% {
+        transform: translateY(-100px);
+    }
+}
+
+section {
+    min-height: 100vh;
+    height: auto;
+}
+
+
+
+h1 {
+    font-size: 220px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 5px var(--text);
+    letter-spacing: 7px;
+    width: 100%;
+    text-align: center;
+    line-height: 155px;
+    text-shadow: 0px 3px 10px var(--text);
+    animation: esquerda 2s ease-in-out;
+}
+
+@keyframes esquerda {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    width: 67%;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0px 3px 10px var(--red4);
+    animation: direita 2s ease-in-out;
+}
+
+@keyframes direita {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 60px;
+    background-color: var(--red2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+footer i{
+    color: white;
+    font-size: 30px;
+}
+
+/* footer.ft {
+    background-color: var(--red1);
+    box-shadow: 10px 3px 10px var(--red1);
+} */
+
+
+
